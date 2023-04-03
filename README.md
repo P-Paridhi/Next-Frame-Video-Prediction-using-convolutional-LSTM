@@ -15,4 +15,9 @@
   - Optimizer used: Adam
   
 - Model Training: 
-  - 
+  - early_stopping = keras.callbacks.EarlyStopping(monitor="val_loss", patience=10)
+reduce_lr = keras.callbacks.ReduceLROnPlateau(monitor="val_loss", patience=5) 
+  - Define modifiable training hyperparameters.
+  - Fit the model to the training data.
+  
+ - Frame Prediction Visualizations
